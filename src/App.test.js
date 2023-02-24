@@ -12,4 +12,6 @@ test("renders increse counter", () => {
   const counter = screen.getByTestId("counter");
   fireEvent.click(increase);
   expect(counter).toHaveTextContent(1);
+  expect(counter).toBeInTheDocument()
+  
 });
